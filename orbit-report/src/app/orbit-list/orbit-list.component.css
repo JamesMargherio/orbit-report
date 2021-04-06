@@ -17,7 +17,7 @@ table {
 }
 
 .header-row {
-    background: rgb(56, 56, 56);
+    background: rgb(60, 60, 60);
     color: #fff
 }
 
@@ -28,5 +28,5 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(42, 42, 42);
 }

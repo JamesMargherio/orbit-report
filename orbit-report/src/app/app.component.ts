@@ -28,20 +28,15 @@ export class AppComponent {
   }
 
   search(searchTerm: string): void {
-   let matchingSatellites: Satellite[] = [];
-   searchTerm = searchTerm.toLowerCase();
-   for(let i=0; i < this.sourceList.length; i++) {
+    let matchingSatellites: Satellite[] = [];
+    searchTerm = searchTerm.toLowerCase();
+    for(let i=0; i < this.sourceList.length; i++) {
       let name = this.sourceList[i].name.toLowerCase();
       if (name.indexOf(searchTerm) >= 0) {
-         matchingSatellites.push(this.sourceList[i]);
+        matchingSatellites.push(this.sourceList[i]);
       }
-   }
+    }
    this.displayList = matchingSatellites;
   }
 
 }
-
-
-
-
-

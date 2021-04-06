@@ -13,10 +13,7 @@ export class Satellite {
         this.operational = operational;
     }
 
-  shouldShowWarning() {
-        let whatType: string = this.type.toLowerCase();
-        if (whatType === 'space debris') {
-            return {warning : true};
-        } 
+    shouldShowWarning():boolean {
+        return (this.type.toLowerCase() === 'space debris')
     }  
 }
